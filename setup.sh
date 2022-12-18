@@ -26,6 +26,9 @@ apt-get autoremove >/dev/null
 
 # Update container OS
 msg "Updating container OS..."
+
+apt-get update --allow-releaseinfo-chang
+
 apt-get update >/dev/null
 apt-get -qqy upgrade &>/dev/null
 
